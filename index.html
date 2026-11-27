@@ -19,17 +19,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 15px;
+    padding: 35px 12px;
 }
 
 .main-card {
     background: #fff;
     width: 100%;
-    max-width: 550px;
-    padding: 35px 28px;
-    border-radius: 20px;
+    max-width: 750px;
+    padding: 55px 38px;
+    border-radius: 28px;
     text-align: center;
-    box-shadow: 0 12px 35px rgba(0,0,0,0.20);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.25);
 }
 
 .telegram-btn {
@@ -38,66 +38,68 @@ body {
     background: #087fc5;
     color: white;
     text-decoration: none;
-    padding: 20px 12px;
-    border-radius: 50px;
-    font-size: 19px;
+    padding: 28px 15px;
+    border-radius: 60px;
+    font-size: 27px;
     font-weight: bold;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 10px rgba(0,100,200,0.20);
+    margin-bottom: 35px;
+    box-shadow: 0 6px 15px rgba(0,100,200,0.25);
 }
 
 .profile {
-    width: 115px;
-    height: 115px;
+    width: 165px;
+    height: 165px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #eaf5ff;
-    margin: 0 auto 20px;
+    border: 7px solid #eaf5ff;
+    margin: 0 auto 30px;
     display: block;
 }
 
 .heading {
     color: #20ad4d;
-    font-size: 27px;
+    font-size: 38px;
     line-height: 1.4;
     font-weight: 800;
-    margin-bottom: 22px;
+    margin-bottom: 35px;
 }
 
 .details {
     text-align: left;
     display: inline-block;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    width: 100%;
 }
 
 .details p {
-    font-size: 18px;
+    font-size: 23px;
     font-weight: 600;
     color: #333;
-    line-height: 1.8;
+    line-height: 1.9;
+    margin-bottom: 10px;
 }
 
 .check {
     color: #20ad4d;
-    margin-right: 9px;
+    margin-right: 12px;
     font-weight: bold;
 }
 
 .limited {
     background: #eff8ff;
     color: #0874ad;
-    padding: 17px 10px;
-    border-radius: 12px;
-    font-size: 18px;
+    padding: 25px 15px;
+    border-radius: 15px;
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 22px;
+    margin-bottom: 32px;
 }
 
 .note {
     color: #777;
-    font-size: 12px;
-    line-height: 1.6;
-    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-top: 28px;
 }
 
 .note strong {
@@ -105,31 +107,48 @@ body {
 }
 
 .powered {
-    font-size: 17px;
+    font-size: 23px;
+    font-weight: bold;
     color: #222;
-    margin-top: 12px;
+    margin-top: 20px;
 }
 
 @media(max-width:480px) {
     .main-card {
-        padding: 28px 18px;
+        padding: 35px 20px;
+        border-radius: 22px;
     }
 
     .telegram-btn {
-        font-size: 16px;
-        padding: 18px 8px;
+        font-size: 22px;
+        padding: 23px 10px;
+    }
+
+    .profile {
+        width: 140px;
+        height: 140px;
     }
 
     .heading {
-        font-size: 23px;
+        font-size: 30px;
     }
 
     .details p {
-        font-size: 15px;
+        font-size: 19px;
+        line-height: 1.7;
     }
 
     .limited {
+        font-size: 20px;
+        padding: 22px 12px;
+    }
+
+    .note {
         font-size: 15px;
+    }
+
+    .powered {
+        font-size: 20px;
     }
 }
 </style>
