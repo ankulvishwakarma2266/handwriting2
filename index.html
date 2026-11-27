@@ -1,241 +1,183 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Work From Home Handwriting Job</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<title>Kavita Home Work Jobs</title>
 
 <style>
-
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-font-family:'Poppins',sans-serif;
-background:linear-gradient(135deg,#0b6eb8,#18c13d);
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #087eb8, #00b95c);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
 }
 
-/* Main Container */
-
-.sio-main-container{
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-padding:20px;
+.main-card {
+    background: #fff;
+    width: 100%;
+    max-width: 550px;
+    padding: 35px 28px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.20);
 }
 
-/* Card */
-
-.sio-landing-wrap{
-max-width:520px;
-width:100%;
-text-align:center;
-background:#fff;
-padding:30px 25px;
-border-radius:18px;
-box-shadow:0 10px 30px rgba(0,0,0,.15);
+.telegram-btn {
+    display: block;
+    width: 100%;
+    background: #087fc5;
+    color: white;
+    text-decoration: none;
+    padding: 20px 12px;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,100,200,0.20);
 }
 
-/* Pulse Animation */
-
-@keyframes pulse-blue{
-0%{box-shadow:0 0 0 0 rgba(11,110,184,.7)}
-70%{box-shadow:0 0 0 18px rgba(11,110,184,0)}
-100%{box-shadow:0 0 0 0 rgba(11,110,184,0)}
+.profile {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #eaf5ff;
+    margin: 0 auto 20px;
+    display: block;
 }
 
-/* Button */
-
-.sio-btn{
-display:block;
-width:100%;
-background:linear-gradient(45deg,#0b6eb8,#0a8be0);
-color:#fff;
-padding:16px;
-font-size:16px;
-font-weight:700;
-border-radius:50px;
-text-decoration:none;
-margin:15px 0;
-transition:.3s;
-animation:pulse-blue 2s infinite;
+.heading {
+    color: #20ad4d;
+    font-size: 27px;
+    line-height: 1.4;
+    font-weight: 800;
+    margin-bottom: 22px;
 }
 
-.sio-btn:hover{
-transform:scale(1.05);
-background:linear-gradient(45deg,#095c9d,#0b6eb8);
+.details {
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 25px;
 }
 
-/* Profile */
-
-.sio-profile{
-margin:20px 0;
+.details p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.8;
 }
 
-.sio-avatar{
-width:110px;
-height:110px;
-margin:auto;
-border-radius:50%;
-overflow:hidden;
-border:4px solid #fff;
-box-shadow:0 5px 15px rgba(0,0,0,.2);
+.check {
+    color: #20ad4d;
+    margin-right: 9px;
+    font-weight: bold;
 }
 
-.sio-avatar img{
-width:100%;
-height:100%;
-object-fit:cover;
+.limited {
+    background: #eff8ff;
+    color: #0874ad;
+    padding: 17px 10px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 22px;
 }
 
-.sio-headline{
-margin-top:12px;
-font-size:24px;
-font-weight:800;
-color:#18c13d;
+.note {
+    color: #777;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-top: 20px;
 }
 
-/* Features */
-
-.sio-features{
-margin-top:10px;
+.note strong {
+    color: #159b50;
 }
 
-.sio-feature{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:10px;
-margin:8px 0;
+.powered {
+    font-size: 17px;
+    color: #222;
+    margin-top: 12px;
 }
 
-.sio-feature p{
-font-weight:600;
-color:#333;
+@media(max-width:480px) {
+    .main-card {
+        padding: 28px 18px;
+    }
+
+    .telegram-btn {
+        font-size: 16px;
+        padding: 18px 8px;
+    }
+
+    .heading {
+        font-size: 23px;
+    }
+
+    .details p {
+        font-size: 15px;
+    }
+
+    .limited {
+        font-size: 15px;
+    }
 }
-
-.sio-tick{
-width:24px;
-height:24px;
-border-radius:50%;
-background:#eaf7ea;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:800;
-color:#18c13d;
-font-size:14px;
-}
-
-/* Highlight */
-
-.sio-highlight{
-margin:18px 0;
-padding:10px;
-background:#f1f8ff;
-border-radius:10px;
-font-weight:700;
-color:#0b6eb8;
-}
-
-/* Disclaimer */
-
-.sio-disclaimer{
-margin-top:20px;
-font-size:11px;
-color:#777;
-line-height:1.4;
-}
-
-/* Mobile */
-
-@media(max-width:480px){
-
-.sio-btn{
-font-size:14px;
-padding:14px;
-}
-
-.sio-headline{
-font-size:21px;
-}
-
-.sio-feature p{
-font-size:13px;
-}
-
-}
-
 </style>
-
 </head>
 
 <body>
 
-<div class="sio-main-container">
+<div class="main-card">
 
-<div class="sio-landing-wrap">
+    <a href="https://t.me/YOUR_CHANNEL"
+       class="telegram-btn">
+       JOIN TELEGRAM CHANNEL 🚀
+    </a>
 
-<a class="sio-btn" href="https://t.me/+UE4BQEue0_MyNjg1" target="_blank">
-JOIN TELEGRAM CHANNEL 🚀
-</a>
+    <img class="profile"
+         src="https://placehold.co/200x200/eaf5ff/087fc5?text=Profile"
+         alt="Profile">
 
-<div class="sio-profile">
+    <h1 class="heading">
+        KAVITA HOME WORK JOBS<br>
+        PUBLICATION
+    </h1>
 
-<div class="sio-avatar">
-<img src="https://i.ibb.co/wZMV9PZk/k-AVITA-i-MAGE.jpg">
-</div>
+    <div class="details">
+        <p><span class="check">✔</span> Simple Writing Work – No Experience Needed</p>
+        <p><span class="check">✔</span> Earn ₹15,000 – ₹30,000 Per Month</p>
+        <p><span class="check">✔</span> Work From Home • Flexible Timing</p>
+    </div>
 
-<div class="sio-headline">
-KAVITA HOME WORK JOBS PUBLICATION
-</div>
+    <div class="limited">
+        Limited Seats Available – Apply Today! 🚀
+    </div>
 
-</div>
+    <a href="https://t.me/YOUR_CHANNEL"
+       class="telegram-btn">
+       JOIN TELEGRAM CHANNEL 🚀
+    </a>
 
-<div class="sio-features">
+    <p class="note">
+        <strong>Note:</strong> This is project-based work.
+        Earnings depend on performance and submission quality.
+    </p>
 
-<div class="sio-feature">
-<div class="sio-tick">✓</div>
-<p>Simple Writing Work – No Experience Needed</p>
-</div>
-
-<div class="sio-feature">
-<div class="sio-tick">✓</div>
-<p>Earn ₹15,000 – ₹30,000 Per Month</p>
-</div>
-
-<div class="sio-feature">
-<div class="sio-tick">✓</div>
-<p>Work From Home • Flexible Timing</p>
-</div>
-
-<div class="sio-highlight">
-Limited Seats Available – Apply Today! 🚀
-</div>
-
-</div>
-
-<a class="sio-btn" href="https://t.me/+UE4BQEue0_MyNjg1" target="_blank">
-JOIN TELEGRAM CHANNEL 🚀
-</a>
-
-<div class="sio-disclaimer">
-<b style="color:#0a7a3a">Note:</b> This is project-based work. 
-Earnings depend on performance and submission quality.
-  
-</div> Powered By Ankul Ad Agency
-
-</div>
+    <p class="powered">
+        Powered By Ankul Ad Agency
+    </p>
 
 </div>
 
 </body>
-
 </html>
